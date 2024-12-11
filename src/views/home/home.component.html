@@ -1,0 +1,10 @@
+<h1 class="text-3xl font-bold">
+   {{ auth.isLogged ? "Bonjour, " + auth.username : ""}}
+</h1>
+<div class="test">
+    @for(art of data | async; track $index) {
+        <app-article (articleDeleted)="data = service.all()" [article]="art"/>
+    }
+</div>
+
+

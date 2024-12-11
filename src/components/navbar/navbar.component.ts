@@ -1,0 +1,21 @@
+import { Component, inject } from '@angular/core';
+import { Router, RouterLink } from '@angular/router';
+import { AuthService } from '../../services/auth.service';
+
+@Component({
+  selector: 'app-navbar',
+  standalone: true,
+  imports: [RouterLink],
+  templateUrl: './navbar.component.html',
+  styleUrl: './navbar.component.css'
+})
+export class NavbarComponent {
+
+  protected auth: AuthService = inject(AuthService)
+  private router: Router = inject(Router)
+
+  //ou plus simplement mettre auth.logout() dans le html
+  logout() {
+    this.auth.logout()
+  }
+}

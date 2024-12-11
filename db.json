@@ -1,0 +1,19 @@
+{
+  "users": [],
+  "articles": [
+    {
+      "id": 1,
+      "src": "",
+      "alt": "Image d'un paysage montagneux",
+      "titre": "Voyage",
+      "description": "Découvrez les merveilles des montagnes avec nos guides exclusifs."
+    },
+    {
+      "id": 2,
+      "src": "",
+      "alt": "Image d'une plage paradisiaque ",
+      "titre": "Évasion ",
+      "description": "Plongez dans l'univers des plages de sable fin et des eaux turquoise."
+    }
+  ]
+}
